@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition A by Mondrian</title>
+</head>
+
+<body>
+<div class="court">
+    <div class="container">
+        <div class="sideline-1"></div>
+        <div class="sideline-2"></div>
+        <div class="sideline-3"></div>
+        <div class="sideline-4"></div>
+        <div class="left-back"></div>
+        <div class="right-back"></div>
+        <div class="left-front-1"></div>
+        <div class="left-front-2"></div>
+        <div class="right-front-1"></div>
+        <div class="right-front-2"></div>
+    </div>
+</div>
+
+<style>
+
+    .court {
+        display: grid;
+        grid-template-columns: 900px;
+        grid-template-rows: 600px;
+        align-items: center;
+        justify-items: center;
+        background: url("assets/images/white-texture.png"), #0F7666;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 170px 200px 200px 170px;
+        grid-template-rows: 40px 130px 130px 40px;
+        grid-gap: 3px;
+        background: white;
+        grid-template-areas:
+                "sideline-1 sideline-1 sideline-2 sideline-2"
+                "left-back left-front-1 right-front-1 right-back"
+                "left-back left-front-2 right-front-2 right-back"
+                "sideline-3 sideline-3 sideline-4 sideline-4";
+        border: solid white 3px;
+
+
+    }
+
+    .container>* {
+        background: url("assets/images/white-texture.png"), #4272CC;
+    }
+
+    .sideline-1 {
+        grid-area: sideline-1;
+    }
+
+    .sideline-2 {
+        grid-area: sideline-2;
+    }
+
+    .sideline-3 {
+        grid-area: sideline-3;
+    }
+
+    .sideline-4 {
+        grid-area: sideline-4;
+    }
+
+    .left-back {
+        grid-area: left-back;
+    }
+
+    .right-back {
+        grid-area: right-back;
+    }
+
+    .left-front-1 {
+        grid-area: left-front-1;
+    }
+
+    .right-front-1 {
+        grid-area: right-front-1;
+    }
+
+    .left-front-2 {
+        grid-area: left-front-2;
+    }
+
+    .right-front-2 {
+        grid-area: right-front-2;
+    }
+
+
+
+</style>
+
+</body>
+
+</html>
