@@ -4,7 +4,7 @@ Real things recreated using CSS Grid
 <table>
     <tr>
         <td>
-            Original
+            Composition A by Mondrian
         </td>
         <td>
             CSS Grid
